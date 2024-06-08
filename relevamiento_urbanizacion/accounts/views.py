@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate
 from django.contrib import messages
-#from .forms import RegisterForm
+# from .forms import RegisterForm
 
 # def register_view(request):
 #     if request.method == 'POST':
@@ -21,10 +21,10 @@ def login_view(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('main')
+            return redirect('core')
         else:
             # mensaje de error
             messages.error(request, 'Usuario no registrado. Si es un error por favor, comuníquese con el servicio de atención al cliente.')
             return render(request, 'accounts/login.html')
 
-    return render(request, 'accounts/main.html')
+    return render(request, 'accounts/login.html')

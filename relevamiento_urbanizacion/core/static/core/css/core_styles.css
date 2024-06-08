@@ -1,0 +1,77 @@
+/* Estilos para el header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info,
+.app-links,
+.password-management,
+.logout-icon {
+    margin-right: 20px;
+}
+
+.user-info span {
+    font-weight: bold;
+}
+
+.app-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.app-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.app-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.password-management a,
+.logout-icon a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    padding: 20px;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content span {
+    font-size: 14px;
+}
+
+.footer-content .left,
+.footer-content .right {
+    flex-basis: 30%;
+}
+
+.footer-content .center {
+    flex-grow: 1;
+}

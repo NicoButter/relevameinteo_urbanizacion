@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urbanizator</title>
+    <link rel="stylesheet" href="{% static 'core/css/core_styles.css' %}">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="user-info">
+                    <span>Bienvenido, {{ user.username }}</span>
+                </div>
+                <nav class="app-links">
+                    <ul>
+                        <li><a href="{% url 'add_street' %}">Cargar Calle</a></li>
+                        <li><a href="#">Aplicación 2</a></li>
+                        <li><a href="#">Aplicación 3</a></li>
+                    </ul>
+                </nav>
+                <div class="password-management">
+                    <a href="#">Autogestión de Contraseña</a>
+                </div>
+                <div class="logout-icon">
+                    <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Aquí va el contenido específico de cada herramienta seleccionada -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="left">
+                    <span>Nombre de la Localidad | Fecha: {{ fecha }}</span>
+                </div>
+                <div class="center">
+                    <span>Nombre de la Institución</span>
+                </div>
+                <div class="right">
+                    <a href="#">Formulario de Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Agrega aquí cualquier enlace a scripts externos o tus propios scripts -->
+
+</body>
+
+</html>
