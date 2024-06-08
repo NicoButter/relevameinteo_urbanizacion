@@ -1,0 +1,11 @@
+# Archivos de compilación y archivos temporales
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Directorio virtualenv
+venv/
+
+# Configuraciones de Visual Studio Code
+.vscode/
