@@ -1,76 +1,39 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 .container {
-    width: 50%;
-    margin: auto;
-}
-
-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ccc; /* Agregamos borde */
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .container h2 {
-    margin-bottom: 20px;
     text-align: center;
-    color: #333;
 }
 
-.container label {
-    display: block;
-    margin-bottom: 10px;
-    color: #000;
-}
-
-.container input[type="text"],
-.container input[type="password"] {
-    width: calc(100% - 20px); /* Ajustamos el ancho */
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    margin-bottom: 10px; /* Agregamos margen inferior */
-    margin-right: 10px; /* Alineamos a la izquierda */
+.container form {
+    margin-top: 20px;
 }
 
 .container button {
-    width: calc(20% - 10px); /* Ajustamos el ancho */
+    display: block;
+    width: 100%;
     padding: 10px;
-    border: none;
-    border-radius: 4px;
     background-color: #007bff;
     color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    /* float: right; Movemos el botón a la derecha */
+    border: none;
+    border-radius: 5px;
 }
 
-.container .button-container {
-    text-align: right; /* Alineamos el contenedor hacia la derecha */
-    margin-top: 10px; /* Agregamos un poco de margen superior */
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 10px;
+    }
 }
 
-.container button:hover {
-    background-color: #0056b3;
-}
-
-.contact-info {
-    margin-top: 20px;
-    text-align: center;
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 100%;
+    }
 }

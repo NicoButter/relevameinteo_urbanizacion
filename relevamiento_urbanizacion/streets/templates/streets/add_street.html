@@ -12,4 +12,9 @@
         {{ form.as_p }}
         <button type="submit">Guardar</button>
     </form>
+
+    {% if form.instance.pk %}
+        <p>Longitud en metros: {{ form.instance.longitud_en_metros }}</p>
+    {% endif %}
+    
 {% endblock %}

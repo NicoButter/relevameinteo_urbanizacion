@@ -57,7 +57,7 @@ ROOT_URLCONF = 'relevamiento_urbanizacion.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [],# os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -69,6 +69,9 @@ TEMPLATES = [
         },
     },
 ]
+
+LOGIN_REDIRECT_URL = 'core'
+
 
 WSGI_APPLICATION = 'relevamiento_urbanizacion.wsgi.application'
 

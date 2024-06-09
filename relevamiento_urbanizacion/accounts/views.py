@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import redirect
 from django.contrib.auth import login, authenticate
 from django.contrib import messages
 # from .forms import RegisterForm
@@ -25,6 +25,6 @@ def login_view(request):
         else:
             # mensaje de error
             messages.error(request, 'Usuario no registrado. Si es un error por favor, comuníquese con el servicio de atención al cliente.')
-            return render(request, 'accounts/login.html')
+            return redirect('login')
 
-    return render(request, 'accounts/login.html')
+    return redirect('login')

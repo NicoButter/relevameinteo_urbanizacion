@@ -7,8 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urbanizator</title>
-
+    
     <link rel="stylesheet" href="{% static 'core/css/core_styles.css' %}">
+
+    <script src="https://kit.fontawesome.com/16c678032e.js" crossorigin="anonymous"></script>
     
 </head>
 
@@ -30,7 +32,7 @@
                     <a href="#">Autogestión de Contraseña</a>
                 </div>
                 <div class="logout-icon">
-                    <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+                    <a href="{% url 'login' %}"><i class="fa-solid fa-right-from-bracket"></i></a>
                 </div>
             </div>
         </div>
