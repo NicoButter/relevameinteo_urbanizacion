@@ -1,4 +1,14 @@
-/* Estilos para el header */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 .header {
     background-color: #333;
     color: #fff;
@@ -46,6 +56,7 @@
 
 /* Estilos para el contenido principal */
 .main-content {
+    flex: 1;
     padding: 20px;
 }
 
@@ -55,6 +66,7 @@
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    flex-shrink: 0;
 }
 
 .footer-content {

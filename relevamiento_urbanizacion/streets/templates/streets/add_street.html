@@ -3,6 +3,9 @@
 {% load static %}
 
 {% block content %}
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'streets/css/add_street_styles.css' %}">
+
     <h1>Agregar Calle</h1>
     <form method="post">
         {% csrf_token %}
