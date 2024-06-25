@@ -5,13 +5,18 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urbanizator</title>
-    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="{% static 'core/css/core_styles.css' %}">
 
     <script src="https://kit.fontawesome.com/16c678032e.js" crossorigin="anonymous"></script>
-    
+
 </head>
 
 <body>
@@ -24,8 +29,8 @@
                 <nav class="app-links">
                     <ul>
                         <li><a href="{% url 'add_street' %}">Cargar Calle</a></li>
-                        <li><a href="#">Aplicación 2</a></li>
-                        <li><a href="#">Aplicación 3</a></li>
+                        <!-- <li><a href="#">Aplicación 2</a></li>
+                        <li><a href="#">Aplicación 3</a></li> -->
                     </ul>
                 </nav>
                 <div class="password-management">
@@ -38,7 +43,7 @@
         </div>
     </header>
 
-    <!-- Contenido Principal -->
+
     <main class="main-content">
 
         {% block content %}
@@ -54,7 +59,7 @@
                     <span>Nombre de la Localidad | Fecha: {{ fecha }}</span>
                 </div>
                 <div class="center">
-                    <span>Nombre de la Institución</span>
+                    <span>Juzgado Electoral Federal - Río Gallegos - Informática - 2024</span>
                 </div>
                 <div class="right">
                     <a href="#">Formulario de Contacto</a>
@@ -63,7 +68,6 @@
         </div>
     </footer>
 
-    <!-- Agrega aquí cualquier enlace a scripts externos o tus propios scripts -->
 
 </body>
 
