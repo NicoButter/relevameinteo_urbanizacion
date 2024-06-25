@@ -11,11 +11,52 @@
 <body>
     <div class="container">
         <h2>Inicio de sesión</h2>
-        <form method="post">
-            {% csrf_token %}
-            {{ form }}
-            <button type="submit">Iniciar sesión</button>
-        </form>
+        <div class="form">
+            <div class="field">
+              <span class="icon"></span>
+              <input type="email" class="input" id="email" placeholder="Email">
+            </div>
+            <div class="field">
+              <span class="icon"></span>
+              <input type="password" class="input" id="password" placeholder="Password">
+            </div>
+            <button class="button" id="submit">LOGIN</button>
+            <div class="side-top-bottom"></div>
+            <div class="side-left-right"></div>
+          </div>
     </div>
+
+    <script>
+        const form = document.querySelector('.form');
+        const fields = document.querySelectorAll('.field');
+        const submitBtn = document.querySelector('.button');
+      
+        form.addEventListener('mousemove', (e) => {
+          const x = e.clientX;
+          const y = e.clientY;
+          const centerX = form.offsetWidth / 2;
+          const centerY = form.offsetHeight / 2;
+          const distanceX = x - centerX;
+          const distanceY = y - centerY;
+          const angleX = distanceX * 0.01;
+          const angleY = distanceY * 0.01;
+      
+          form.style.transform = `perspective(1000px) rotateX(${angleY}deg) rotateY(${angleX}deg)`;
+        });
+      
+        fields.forEach((field) => {
+          field.addEventListener('focus', () => {
+            field.classList.add('focused');
+          });
+      
+          field.addEventListener('blur', () => {
+            field.classList.remove('focused');
+          });
+        });
+      
+        submitBtn.addEventListener('click', () => {
+          // Agrega aquí la lógica para manejar el envío del formulario
+        });
+      </script>
 </body>
 </html>
