@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Calles</title>
+</head>
+<body>
+    <h1>Lista de Calles</h1>
+    <ul>
+        {% for calle in calles %}
+            <li>{{ calle.nombre }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

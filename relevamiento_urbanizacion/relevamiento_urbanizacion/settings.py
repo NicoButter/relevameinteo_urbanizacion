@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'core',
-    'streets'
+    'streets',
+    'ver_calles'
 ]
 
 MIDDLEWARE = [

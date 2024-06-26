@@ -22,4 +22,5 @@ urlpatterns = [
     path('', include('core.urls')),
     path('streets/', include('streets.urls')),
     path('accounts/', include('django.contrib.auth.urls')),  # URLs de autenticación de Django
+    path('ver_calles/', include('ver_calles.urls')),
 ]
